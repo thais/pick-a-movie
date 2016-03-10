@@ -1,0 +1,19 @@
+{
+  "name": "pick-a-movie",
+  "version": "1.0.0",
+  "description": "## Weeee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaishamilton/pick-a-movie.git"
+  },
+  "author": "Thais & Leonardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaishamilton/pick-a-movie/issues"
+  },
+  "homepage": "https://github.com/thaishamilton/pick-a-movie#readme"
+}
