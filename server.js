@@ -4,7 +4,7 @@ var port = 3000;
 
 app.get('/', function(req, res) {
   console.log("Received request: /");
-  res.send('Hello World');
+  res.status(200).json({ message: "Hello World"} );
 });
 
 console.log("Listening in port " + port);
