@@ -1,5 +1,7 @@
 # pick-a-movie
 
+[![Stories in Ready](https://badge.waffle.io/thaishamilton/pick-a-movie.svg?label=ready&title=Ready)](http://waffle.io/thaishamilton/pick-a-movie)
+
 ## Using Vagrant
 
 * Install VirtualBox and Vagrant
