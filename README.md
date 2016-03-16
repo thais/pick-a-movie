@@ -15,3 +15,4 @@
 * Install node and npm (if you don't have it already)
 * Run `make install` or `npm install` to install dependencies
 * Run `make test` or `npm test` to run the tests
+* Run `npm run dev` to start webpack watcher
