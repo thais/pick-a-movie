@@ -1,3 +1,5 @@
 node_modules/
 .vagrant/
 *.log
+/dist
+.DS_Store
