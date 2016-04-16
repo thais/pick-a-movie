@@ -16,3 +16,4 @@
 * Run `make install` or `npm install` to install dependencies
 * Run `make test` or `npm test` to run the tests
 * Run `npm run dev` to start webpack watcher
+* Run `npm start` to run the server
