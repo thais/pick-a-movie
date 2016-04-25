@@ -11,7 +11,7 @@ export default class Form extends Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.onFormSubmit(this.state.item);
-    React.findDOMNode(this.refs.item).focus();
+    this.refs.item.focus();
     return;
   }
 
@@ -22,8 +22,8 @@ export default class Form extends Component {
   render() {
     return(
       <form onSubmit={this.handleSubmit}>
-      <input type="text" ref="item" onChange={this.onChange} value={this.state.item} />
-      <input type="submit" value="Add" />
+        <input type="text" ref="item" onChange={this.onChange} value={this.state.item} />
+        <input type="submit" value="Add" />
       </form>
     );
   }

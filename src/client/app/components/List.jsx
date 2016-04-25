@@ -2,13 +2,9 @@ import React, {Component} from 'react';
 import Item from './Item.jsx'
 
 export default class List extends Component {
-  constructor(props) {
-    super(props);
-  }
-  
-  createItem(itemText) {
+  createItem(itemText, index) {
     return (
-      <Item>{itemText}</Item>
+      <Item key={index}>{itemText}</Item>
     );
   }
 

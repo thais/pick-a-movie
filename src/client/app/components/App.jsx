@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import RaisedButton from 'material-ui/lib/raised-button';
 import Header from './Header.jsx';
 import List from './List.jsx';
 import Form from './Form.jsx';
@@ -21,6 +20,8 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+        <Form onFormSubmit={this.updateItems}/>
+        <List items={this.state.items}/>
         <Form onFormSubmit={this.updateItems}/>
         <List items={this.state.items}/>
       </div>
