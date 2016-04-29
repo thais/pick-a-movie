@@ -18,7 +18,12 @@ var config = {
         loader: 'babel'
       }
     ]
-  }
+  },
+  plugins: [
+          new webpack.ProvidePlugin({
+                      "React": "react",
+                  }),
+    ],
 };
 
 module.exports = config;

@@ -1,7 +1,15 @@
-var expect = require('chai').expect;
+import React from 'react';
+import { shallow } from 'enzyme';
+import sinon from 'sinon';
+import App from '../src/client/app/components/App.jsx';
+import chai from 'chai';
 
-describe("some boilerplate test", function() {
-  it("should pass", function() {
-    expect(true).to.equal(true);
+
+
+describe('<App />', ()=> {
+let expect = chai.expect; 
+  it('renders the header', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.contains(<h1>Pick-a-movie</h1>)).to.equal(true);
   });
 });

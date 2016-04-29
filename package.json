@@ -4,7 +4,7 @@
   "description": "## Weeee",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --compilers js:babel-register",
     "dev": "webpack -d --watch",
     "start": "nodemon server.js"
   },
@@ -23,7 +23,9 @@
     "enzyme": "^2.2.0",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1",
-    "react-addons-test-utils": "^15.0.1"
+    "react-addons-test-utils": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "sinon": "^1.17.3"
   },
   "dependencies": {
     "babel-core": "^6.7.2",
@@ -37,5 +39,11 @@
     "react-dom": "^15.0.1",
     "react-tap-event-plugin": "^1.0.0",
     "webpack": "^1.13.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
   }
 }
