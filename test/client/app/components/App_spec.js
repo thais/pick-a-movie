@@ -1,9 +1,6 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import sinon from 'sinon';
+import { React, shallow, expect } from '../../../../test/SetUpHelper.js';
 import App from '../../../../src/client/app/components/App.jsx';
 import Header from '../../../../src/client/app/components/Header.jsx';
-import { expect } from 'chai';
 
 describe('App', ()=> {
   it('renders the header', () => {
