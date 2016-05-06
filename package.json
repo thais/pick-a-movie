@@ -4,7 +4,7 @@
   "description": "## Weeee",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha --watch",
     "dev": "webpack -d --watch",
     "start": "nodemon server.js"
   },
