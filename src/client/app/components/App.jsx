@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Header from './Header.jsx';
-import Container from './Container.jsx';
 import Match from './Match.jsx';
 import Social from './Social.jsx';
 
@@ -13,9 +12,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        <Container />
         <Match />
-        <Container />
         <Social />
       </div>
     );

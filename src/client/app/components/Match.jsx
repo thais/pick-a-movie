@@ -1,13 +1,35 @@
 import React, {Component} from 'react';
-import List from './List.jsx';
+import Container from './Container.jsx';
 
 export default class Match extends Component {
 
-  
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      movieListOne: ['Procurando Nemo', 'HP1'],
+      movieListTwo: ['HP1']
+    };
+
+    this.updateListOne = this.updateListOne.bind(this);
+    this.updateListTwo = this.updateListTwo.bind(this);
+  }
+
+    updateListOne(newItem) {
+    let allItems = this.state.movieListOne.concat([newItem]);
+    this.setState({movieListOne: allItems});
+  }
+
+  updateListTwo(newItem) {
+    let allItems = this.state.movieListTwo.concat([newItem]);
+    this.setState({movieListTwo: allItems});
+  }
+
   render() {
     return(
-      <div>
-        <p> OLAR vou ser o match </p>
+      <div onChange={this.match}>
+        <Container items={this.state.movieListOne} updateItems={this.updateListOne} />
+        <Container items={this.state.movieListTwo} updateItems={this.updateListTwo} />
       </div>
     );
   }
