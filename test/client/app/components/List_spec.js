@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import List from '../src/client/app/components/List.jsx';
-import Item from '../src/client/app/components/Item.jsx';
+import List from '../../../../src/client/app/components/List.jsx';
+import Item from '../../../../src/client/app/components/Item.jsx';
 import React from 'react';
 
 describe('List', () => {

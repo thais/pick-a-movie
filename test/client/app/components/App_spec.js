@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import sinon from 'sinon';
-import App from '../src/client/app/components/App.jsx';
-import Header from '../src/client/app/components/Header.jsx';
+import App from '../../../../src/client/app/components/App.jsx';
+import Header from '../../../../src/client/app/components/Header.jsx';
 import { expect } from 'chai';
 
 describe('App', ()=> {
