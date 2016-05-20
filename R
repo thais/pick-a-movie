@@ -1,0 +1,70 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
+Plugin 'vim-scripts/vim-auto-save'
+
+call vundle#end()
+
+filetype plugin indent on
+
+set t_Co=256
+set encoding=utf-8
+set background=dark
+set hlsearch
+set laststatus=2
+set number
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set backspace=2
+set expandtab
+set scrolloff=5
+set nowritebackup
+set noswapfile
+set nobackup
+set splitbelow
+set splitright
+set wildmenu
+set wildmode=list:longest,full
+syntax on
+
+colorscheme seti
+
+let g:airline_theme='luna'
+let g:airline_powerline_fonts=1
+
+let g:NERDTreeDirArrows=0
+let g:gitgutter_realtime=1
+
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+inoremap <Esc> <NOP>
+
+noremap <C-Tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
+
+map <C-n> :NERDTreeToggle<CR>
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'

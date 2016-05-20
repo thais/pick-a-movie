@@ -4,7 +4,7 @@
   "description": "## Weeee",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --watch",
+    "test": "mocha --watch --require test/jsdom-setup.js",
     "dev": "webpack -d --watch",
     "start": "nodemon server.js"
   },
@@ -21,6 +21,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "enzyme": "^2.2.0",
+    "jsdom": "^9.1.0",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1",
     "react-addons-test-utils": "^15.0.1",

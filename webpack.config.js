@@ -20,10 +20,10 @@ var config = {
     ]
   },
   plugins: [
-          new webpack.ProvidePlugin({
-                      "React": "react",
-                  }),
-    ],
+    new webpack.ProvidePlugin({
+      "React": "react",
+    }),
+  ],
 };
 
 module.exports = config;

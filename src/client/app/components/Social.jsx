@@ -3,8 +3,8 @@ import React from 'react';
 export default function Social() {
   return (
     <div>
-      <a href="#">Github</a>
-      <a href="#">Facebook</a>
+      <a href="#" className="social-github">Github</a>
+      <a href="#" className="social-facebook">Facebook</a>
     </div>
   );
 }
