@@ -18,5 +18,5 @@ describe('List', () => {
     const wrapper = shallowRender(['some text']);
     expect(wrapper.find(Item)).to.have.length(1);
   });
-});
 
+});
