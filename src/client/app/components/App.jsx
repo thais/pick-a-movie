@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Header from './Header.jsx';
-import Match from './Match.jsx';
-import Social from './Social.jsx';
 
-export default class App extends Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,8 +10,6 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        <Match />
-        <Social />
       </div>
     );
   }
